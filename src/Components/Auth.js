@@ -10,17 +10,17 @@ const Auth = (props) => {
   const [correctPassword, setCorrectPassword] = useState(true)
 
   const loginUser = () => {
-    if (username === 'p' && password === 'p') {
+    if (username === 'purplePiranha' && password === 'ioyueqrtw') {
       setRightPassword(true);
       setTimeout(() => {
         props.history.push('/dashboard');
       }, 8000)
-    } else if (username === 'p' && password !== 'p') {
+    } else if (username === 'purplePiranha' && password !== 'ioyueqrtw') {
       setTimeout(() => {
         setCorrectUsername(true);
         setCorrectPassword(false);
       }, 2000)
-    } else if (username !== 'p' && password === 'p') {
+    } else if (username !== 'purplePiranha' && password === 'ioyueqrtw') {
       setCorrectUsername(false);
       setCorrectPassword(true);
     } else {
@@ -41,7 +41,7 @@ const Auth = (props) => {
             {correctUsername ? null : <div className='login-feedback'>Incorrect Username</div>}
           </div>
           <div className='login-inputs'>
-            <input placeholder='Password' name='password' onChange={e => setPassword(e.target.value)} />
+            <input placeholder='Password' type='password' name='password' onChange={e => setPassword(e.target.value)} />
             {correctPassword ? null : <div className='login-feedback'>Incorrect Password</div>}
           </div>
           <div className='login-buttons-container'>

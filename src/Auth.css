@@ -24,6 +24,10 @@
   padding: 8px;
 }
 
+.login-feedback{
+  color:red;
+}
+
 .login-button{
   background-color: black;
   color: white;

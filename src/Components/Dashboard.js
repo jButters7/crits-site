@@ -41,7 +41,7 @@ const Dashboard = (props) => {
         <div>
           {verifying ?
             <div>
-              <input placeholder='4 character long verification key' onChange={(e) => setVerificationKey(e.target.value)}></input>
+              <input placeholder='4 character long verification key' type='password' onChange={(e) => setVerificationKey(e.target.value)}></input>
               <div className='user-feedback'>{userFeedback}</div>
               <button onClick={() => runExecution()}>Execute</button>
               <button onClick={() => cancelVerification()}>Cancel Verification</button>
