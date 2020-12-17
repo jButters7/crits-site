@@ -11,6 +11,11 @@
   width: 35vw;
 }
 
+.show-username-btn{
+  font-size: 12px;
+  width: 100px;
+}
+
 .logo{
   width: 110px;
 }

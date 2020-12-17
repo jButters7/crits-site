@@ -6,8 +6,8 @@ const Auth = (props) => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [rightPassword, setRightPassword] = useState(false);
-  const [correctUsername, setCorrectUsername] = useState(true)
-  const [correctPassword, setCorrectPassword] = useState(true)
+  const [correctUsername, setCorrectUsername] = useState(true);
+  const [correctPassword, setCorrectPassword] = useState(true);
 
   const loginUser = () => {
     if (username === 'purplePiranha' && password === 'ioyueqrtw') {
@@ -37,7 +37,7 @@ const Auth = (props) => {
         <div>
           <h1 className="text-logo">Dark WEB</h1>
           <div className='login-inputs'>
-            <input placeholder='Username' name='username' onChange={e => setUsername(e.target.value)} />
+            <input placeholder='Username' type='password' name='username' onChange={e => setUsername(e.target.value)} />
             {correctUsername ? null : <div className='login-feedback'>Incorrect Username</div>}
           </div>
           <div className='login-inputs'>
